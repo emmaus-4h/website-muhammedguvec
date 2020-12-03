@@ -1,11 +1,12 @@
-/* Basislayout */
+
+* Basislayout */
 
 html, body {
     height: 100%;
     padding: 0;
-    background-color: #EEEEEE;  
+    background-color:#f3e8c296;
     
-    color: #303030;
+    color: #f74f4fb6;
     font: Verdana, Arial, Sans-Serif;
 }
 
@@ -16,14 +17,17 @@ main {
     position: relative;
 }
 
-
+img {
+  width: 200px ;
+  height: 200px ;
+}
 article {
     text-align: justify;
 }
 
 
 header {
-    color: skyblue;
+    color:#f74f4fb6 ;
     text-align: center;
 }
 
@@ -37,8 +41,8 @@ footer {
 /* specifieke stijlen */
 
 img.zweefLinks {
-    float: left;
-    margin-right: 15px;
+    float: right;
+    margin-left: 15px;
 }
 
 .smalltext {
@@ -56,33 +60,36 @@ a:hover {
 
 
 /* navigatiebalk */
-nav ul {
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    background-color: #dddddd;
-    overflow: hidden;
+
+.navbar{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-nav ul li {
-    float: left;
+.navbar a {
+  float: left;
+  display: block;
+  color: #f74f4fb6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.navbar a:hover {
+  background: #ddd;
+  color: #f74f4fb6;
 }
 
-nav li a:hover {
-    background-color: #aaaaaa;
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 200px; /* Used in this example to enable scrolling */
 }
 
-nav li a.active {
-    background-color: skyblue;
-}
 
 
 
